@@ -1,0 +1,106 @@
+---내부 스타일시트 = HTML 안에 STYLE 태그로 CSS를 작성하는 것
+
+외부 스타일시트 = 외부에 CSS를 작성
+<link rel="stylesheet" href="style.css" /> 
+
+
+
+---전체 선택자 = * {/* CSS 코드 */} HTML에서 사용할 수 있는 모든 요소를 한 번에 선택자 지정
+
+태그 선택자 = 태그명{*/ CSS 코드 */} HTML 태그명으로 선택자를 지정하는 방법
+
+아이디 선택자 = #id 속성값{CSS 코드} HTML에서 사용할 수 있는 id 속성값을 이용해 선택자를 지정
+
+클래스 선택자 = .class 속성값{CSS 코드} HTML에서 사용할 수 있는 class 속성값을 이용해 선택자를 지정
+
+기본 속성 선택자 = [속성="값"]{CSS 코드}
+
+그룹 선택자 = 여러 선택자를 하나로 그룹 지을 때 사용 = 선택자1 ,선택자2, 선택자3{CSS 코드}
+
+
+
+
+---단위 = 절대 단위와 상대 단위로 나뉨
+절대 단위 = 어떤 환경이라도 동일한 크기로 보임(px)
+상대 단위 = 웹 브라우저의 창 크기에 따라 상대적으로 결정되는 단위(%, em, rem, vw, vh)
+
+색상 표기법 = 색상을 값으로 사용하는 속성
+
+font-family 속성 = 글꼴 지정
+
+font-size = 텍스트 크기 변경
+
+font-weight = 텍스트의 굵기 변경
+
+font-variant = 텍스트가 영문일 때 사용(normal, small-caps)
+
+font-style = 글꼴의 스타일 지정
+
+text-align = 텍스트를 정렬할 때 사용(left, center, right, justify)
+
+text-decoration = 텍스트를 꾸밀 때 사용(none, line-through, overline, underline)
+
+letter-spacing = 자간을 조절할 때 사용(글자 사이의 간격)
+
+line-height = 텍스트 한 줄의 높이를 지정할 때 사용
+
+
+
+---박스 모델 구성 속성
+
+margin = 요소의 외부 여백(top, bottom, left, right)
+
+border = 요소의 테두리를 담당(굵기, 모양, 색상)
+
+padding = 요소의 내부 여백 담당
+
+content = 영역 자체를 다루는 속성은 없음 width, height를 content 영역이라 할 수 있음
+
+box-sizing(content-box, border-box)
+width, height 속성의 적용 범위를 content, border 영역으로 제한한다.
+
+
+---배경 속성으로 요소의 배경 설정
+
+background-color = 요소의 배경에 색상을 넣음
+
+background-image = 요소의 배경에 이미지를 넣음
+
+background-repeat(no-repeat, repeat-x, repeat-y) = 이미지 반복 설정을 바꿈
+
+background-size(auto, cover, contain) = 이미지 크기를 지정함
+
+background-position(left, center, right, top, bottom, px, rem, em, %) = 이미지의 위치를 결정함 
+
+background-attachment(local, scroll, fixed) = 삽입된 이미지를 스크롤할 때 이미지의 작동 방식을 결정함
+
+
+position(static, relative, absolute, fixed, sticky) = HTML 요소를 좌푯값에 따라 배치
+
+
+---전환 효과 속성 적용하기
+
+transition-property(none, all) = 전환 효과를 적용할 대상 속성을 지정
+
+transition-duration = 전환 효과의 지속 시간 설정
+
+transition-delay = 전환 효과의 발생을 지연
+
+transition-timing-function(lenear, ease, ease-in, ease-out, ease-in-out, cubic-bezier) = 전환 효과의 진행 속도를 지정
+
+
+---애니메이션 속성으로 전환 효과 제어하기
+
+keyframes = 애니메이션이 진행되는 과정에서 특정 시점에서 발생해야 하는 여러 작업을 정의하는 문법
+
+animation-name = 키 프레임명
+
+animation-duration = 애니메이션을 지속할 시간
+
+animation-delay = 애니메이션 실행을 지연
+
+animation-fill-mode(none, forwards, backwards, both) = 애니메이션이 종료된 시점의 상태를 유지
+
+animation-iteration-count = 실행 횟수 조절
+
+animation-play-state(paused, running) = 애니메이션의 재생 상태를 지정
